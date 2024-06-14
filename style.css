@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --min-width: 335px;
+  --min-wide-width: 350px;
+  --max-width: 1400px;
+  --max-wide-width: 1600px;
+
+  --clr-white: #fff;
+  /* white 12% */
+  --clr-yellow: #F9B800;
+  --clr-blue: #0052B4;
+  --clr-purple: #9747FF;
+  --clr-red: #D80027;
+  --clr-black: #262626;
+  /* black 80%, 12% */
+  --clr-grey: #787878;
+  --clr-light-yellow-0: #FFF1C9;
+  --clr-light-yellow-1: #FEEDBC;
+  --clr-light-yellow-2: #FFE18B;
+  --clr-light-yellow-3: #D3B970;
+  --clr-light-yellow-4: #FFBB45;
+
+  --bg-yellow: #FEEDBC;
+  --bg-white: #FFFAEB;
+  --bg-shade: #FFF6DA;
+
+  --size-mobile-heading-1: 2.25rem;
+  --size-mobile-heading-2: 1.5rem;
+  --size-mobile-heading-5: 1rem;
+
+  --size-web-base: 1.125rem;
+  --size-web-large: 1.25rem;
+  --size-web-button: 1.5rem;
+  --size-web-heading-1: 5rem;
+  --size-web-heading-2: 4.5rem;
+  --size-web-heading-3: 3.75rem;
+  --size-web-heading-4: 3.125rem;
+  --size-web-heading-5: 1.875rem;
+  --size-web-heading-6: 1.25rem;
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box
+}
+
+* {
+  margin: 0
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: Poppins;
+}
+
+:where(img, picture, video, canvas, svg) {
+  display: block;
+  max-width: 100%
+}
+
+:where(input, button, textarea, select) {
+  font: inherit
+}
+
+:where(p, h1, h2, h3, h4, h5, h6) {
+  overflow-wrap: break-word
+}
+
+:where(#root, #__next) {
+  isolation: isolate
+}
