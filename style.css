@@ -231,7 +231,7 @@ header .wide-wrapper {
   .hero .wrapper {
     display: flex;
     flex-direction: row-reverse;
-    align-items: flex-start;
+    align-items: center;
     padding: 3rem;
   }
 
@@ -299,6 +299,37 @@ header .wide-wrapper {
   align-items: center;
   font-weight: 800;
   color: var(--clr-white);
+}
+
+@media (min-width: 1024px) {
+  .service-description-1 .wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 3rem;
+    margin-top: 4rem;
+  }
+
+  .service-description-1 .wrapper .main-desc {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .service-description-1 .main-desc div {
+    margin: 1rem 0;
+  }
+
+  .service-description-1 .main-img {
+    width: 50%;
+  }
+
+  .cta-dark {
+    gap: 4rem;
+    margin: 0;
+    display: inline-flex;
+  }
 }
 
 /* service-description-2 */
