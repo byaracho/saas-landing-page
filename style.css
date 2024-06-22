@@ -228,11 +228,14 @@ header .wide-wrapper {
 }
 
 @media (min-width: 1024px) {
+  .wrapper {
+    padding: 3rem;
+  }
+
   .hero .wrapper {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding: 3rem;
   }
 
   .hero .wrapper .main-desc {
@@ -303,7 +306,6 @@ header .wide-wrapper {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding: 3rem;
     margin-top: 4rem;
   }
 
@@ -376,6 +378,44 @@ header .wide-wrapper {
 
 .stage p {
   font-size: 1.2rem;
+}
+
+@media (min-width: 1024px) {
+  .cta {
+    margin-top: 2rem;
+  }
+
+  .service-description-2 .wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+
+  .service-description-2 .main-desc {
+    width: 50%;
+  }
+
+  .service-description-2 .stage-section {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2rem;
+  }
+
+  .stage {
+    margin: 0;
+    width: 46%;
+    height: 25rem;
+  }
+
+  .stage-section div:nth-child(2) {
+    margin-top: 2rem;
+  }
+
+  .stage-section div:nth-child(4) {
+    margin-top: 2rem;
+  }
 }
 
 /* customer-feedback */
