@@ -133,6 +133,14 @@ h5 {
   h5 {
     font-size: var(--size-web-heading-5);
   }
+
+  .cta-section h2 {
+    font-size: var(--size-web-heading-5)
+  }
+
+  .cta-section .wrapper {
+    padding-top: 5rem;
+  }
 }
 
 /* header */
@@ -254,7 +262,7 @@ header .wide-wrapper {
     flex-direction: row;
     align-items: stretch;
     flex-wrap: wrap;
-    margin: 60px 0;
+    margin-bottom: 0;
   }
 
   .cta {
@@ -410,11 +418,17 @@ header .wide-wrapper {
   }
 
   .stage-section div:nth-child(2) {
-    margin-top: 2rem;
+    margin-top: 5rem;
+  }
+
+  .stage-section div:nth-child(3) {
+    margin-top: -3rem;
+    background-color: var(--clr-yellow);
   }
 
   .stage-section div:nth-child(4) {
     margin-top: 2rem;
+    background-color: var(--clr-white);
   }
 }
 
@@ -456,6 +470,26 @@ header .wide-wrapper {
   color: var(--clr-black);
 }
 
+@media (min-width: 1024px) {
+  .service-description-3 .wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .service-description-3 .wrapper .main-desc {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .service-description-3 .main-img {
+    width: 50%;
+  }
+}
+
 /* service-description-4 */
 .service-description-4 {
   padding-top: 5rem;
@@ -483,6 +517,34 @@ header .wide-wrapper {
   margin-top: -5rem;
 }
 
+@media (min-width:1024px) {
+  .service-description-4 h5 {
+    font-size: var(--size-web-base);
+    font-weight: 400;
+  }
+
+  .service-description-4 .wrapper {
+    margin-bottom: 5rem;
+  }
+}
+
+/* cta-section */
+@media (min-width:1024px) {
+  .cta-section .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cta-section h2 {
+    width: 50%;
+  }
+
+  .cta-section .cta {
+    margin: 0;
+  }
+}
+
 /* footer */
 hr {
   border: 0;
@@ -502,4 +564,20 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+@media (min-width:1024px) {
+  .cta-section .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cta-section h2 {
+    width: 50%;
+  }
+
+  .cta-section .cta {
+    margin: 0;
+  }
 }
