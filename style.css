@@ -117,12 +117,30 @@ h5 {
   max-width: var(--max-wide-width);
 }
 
+@media (min-width: 1600px) {
+  body {
+    font-size: var(--size-web-base);
+  }
+
+  h1 {
+    font-size: var(--size-web-heading-1);
+  }
+
+  h2 {
+    font-size: var(--size-web-heading-2);
+  }
+
+  h5 {
+    font-size: var(--size-web-heading-5);
+  }
+}
+
 /* header */
 header {
   margin: 0.5rem 1rem;
 }
 
-header div {
+header .wide-wrapper {
   background-color: var(--clr-white);
   border-radius: 999rem;
   height: 4.5rem;
@@ -134,7 +152,28 @@ header div {
 
 .country {
   display: flex;
+  align-items: center;
   gap: 0.8rem;
+}
+
+@media (min-width: 1024px) {
+  header .wide-wrapper:before {
+    content: "";
+    flex: 1;
+  }
+
+  .logo {
+    flex: 1;
+  }
+
+  .logo img {
+    margin: 0 auto;
+  }
+
+  .country {
+    flex: 1;
+    justify-content: flex-end;
+  }
 }
 
 /* hero */
