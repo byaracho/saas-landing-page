@@ -199,6 +199,27 @@ header .wide-wrapper {
   color: var(--clr-yellow);
 }
 
+.cursor {
+  border-left: .2rem solid #000;
+  animation: blink 1.5s infinite;
+  margin-left: .2rem;
+  height: var(--size-web-heading-2);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .check-point {
   background-color: var(--clr-white);
   border-radius: 999rem;
