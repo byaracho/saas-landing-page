@@ -1,3 +1,4 @@
+// 헤더 드롭다운
 const dropdownBtn = document.querySelector(".dropdown-toggle");
 const dropdownContent = document.querySelector(".dropdown-content");
 const toggleArrow = document.querySelector(".arrow");
@@ -20,6 +21,7 @@ document.documentElement.addEventListener("click", function () {
     }
 });
 
+// 아티클 슬라이드
 let pages = 0;
 let positionValue = 0;
 // const feedbackWidth = document.querySelector(".feedback").clientWidth;
@@ -60,3 +62,29 @@ function init() {  // 초기 화면 상태
 }
 init();
 
+// 디테일 상세보기
+const iconRemove = "public/remove.svg"
+const iconAdd = "public/add.svg"
+
+const showMoreBtns = document.querySelectorAll(".show-more");
+const detailContents = document.querySelectorAll(".detail-content");
+const showIcons = document.querySelectorAll(".show-icon");
+
+const toggleShowMore = function (i) {
+    let detailContent = detailContents[i]
+    let showIcon = showIcons[i]
+
+    detailContents[i].classList.toggle("hidden");
+    if (showIcons[i].src.endsWith(iconAdd)) {
+        showIcons[i].src = iconRemove
+    } else {
+        showIcons[i].src = iconAdd
+    };
+};
+
+for (let i = 0; i < showMoreBtns.length; i++) {
+    showMoreBtns[i].addEventListener("click", function (e) {
+        e.stopPropagation();
+        toggleShowMore(i);
+    })
+}

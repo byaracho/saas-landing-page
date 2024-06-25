@@ -563,7 +563,6 @@ header .wide-wrapper {
   }
 }
 
-
 @media (min-width: 768px) {
   .slide {
     width: 30rem;
@@ -615,19 +614,30 @@ header .wide-wrapper {
 .service-description-4 {
   padding-top: 5rem;
   background-color: var(--clr-black);
+}
+
+.service-description-4 h2,
+.service-description-4 h5 {
   color: var(--clr-white);
   text-align: center;
 }
 
 .description-detail {
   background-color: var(--clr-white);
-  border-radius: 3rem;
+  border-radius: 2rem;
   color: var(--clr-black);
   margin: 2rem 0;
-  text-align: left;
-  display: flex;
   padding: 2rem;
-  gap: 1rem;
+}
+
+.detail-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-content {
+  margin-top: .5rem;
 }
 
 .hidden {
