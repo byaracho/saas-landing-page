@@ -536,6 +536,54 @@ header .wide-wrapper {
   font-weight: 800;
 }
 
+.slide {
+  width: 15rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.feedbacks {
+  display: flex;
+  transition: transform 0.5s;
+}
+
+.feedback {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 15rem;
+}
+
+@media(min-width: 480px) {
+  .slide {
+    width: 20rem;
+  }
+
+  .feedback {
+    flex-basis: 20rem;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .slide {
+    width: 30rem;
+  }
+
+  .feedback {
+    flex-basis: 30rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slide {
+    width: 50rem;
+  }
+
+  .feedback {
+    flex-basis: 50rem;
+  }
+}
+
 /* service-description-3 */
 .service-description-3 {
   padding-top: 5rem;
