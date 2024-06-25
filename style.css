@@ -190,19 +190,18 @@ header .wide-wrapper {
 .country-option {
   display: flex;
   align-items: center;
-  justify-content: start;
   gap: .8rem;
   text-decoration: none;
+  width: 80px;
 }
 
 .country-option img {
-  width: 50%;
+  width: 32px;
 }
 
 .country-option span {
-  width: 50%;
   color: var(--clr-black);
-  font-weight: 400;
+  font-weight: 500;
   font-size: .8rem;
 }
 

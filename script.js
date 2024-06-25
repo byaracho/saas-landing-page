@@ -24,7 +24,6 @@ document.documentElement.addEventListener("click", function () {
 // 아티클 슬라이드
 let pages = 0;
 let positionValue = 0;
-// const feedbackWidth = document.querySelector(".feedback").clientWidth;
 
 const prevBtn = document.querySelector(".prev")
 const nextBtn = document.querySelector(".next")
@@ -54,6 +53,17 @@ function back() {
         prevBtn.setAttribute('disabled', 'true')// 마지막 장일 때 back버튼이 disabled된다.
     }
 }
+
+let initialWidth = document.querySelector(".feedback").clientWidth;
+
+window.addEventListener('resize', function () {
+    resizedWidth = document.querySelector(".feedback").clientWidth;
+    if (pages > 0 && initialWidth !== resizedWidth) {
+        positionValue = -(resizedWidth * pages);
+        feedbacks.style.transform = `translateX(${positionValue}px)`;
+        initialWidth = resizedWidth;
+    }
+});
 
 function init() {  // 초기 화면 상태
     prevBtn.setAttribute('disabled', 'true'); // 속성이 disabled가 된다.
