@@ -160,13 +160,14 @@ header .wide-wrapper {
 }
 
 .country {
+  position: relative;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   gap: 0.8rem;
 }
 
 .dropdown {
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -176,7 +177,8 @@ header .wide-wrapper {
   position: absolute;
   background-color: var(--clr-white);
   border-radius: 1rem;
-  margin-top: 9rem;
+  margin-top: 10rem;
+  padding: .5rem;
 
   display: flex;
   flex-direction: column;
@@ -242,7 +244,7 @@ header .wide-wrapper {
 }
 
 .hero {
-  padding-bottom: 12rem;
+  padding-bottom: 14rem;
 }
 
 .hero h5 {
@@ -347,7 +349,7 @@ header .wide-wrapper {
 /* service-description-1 */
 .skewd {
   transform: skew(0deg, -10deg) translateY(-150px);
-  padding: 2rem 0;
+  padding: 6rem 0;
 }
 
 .service-description-1 {
@@ -407,7 +409,7 @@ header .wide-wrapper {
 
 /* service-description-2 */
 .service-description-2 {
-  padding-top: 5rem;
+  padding-top: 8rem;
   background-color: var(--clr-black);
   color: var(--clr-white);
 }
@@ -506,8 +508,8 @@ header .wide-wrapper {
 
 /* customer-feedback */
 .customer-feedback {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .customer-feedback img {
@@ -643,8 +645,9 @@ header .wide-wrapper {
   display: none;
 }
 
+/* cta-section */
 .cta-section .wrapper {
-  margin-top: -5rem;
+  margin-top: -3rem;
 }
 
 @media (min-width:1024px) {
@@ -658,7 +661,6 @@ header .wide-wrapper {
   }
 }
 
-/* cta-section */
 @media (min-width:1024px) {
   .cta-section .wrapper {
     display: flex;
